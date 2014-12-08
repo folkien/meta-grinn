@@ -3,8 +3,8 @@ DESCRIPTION = "Linux kernel for Grinn GISBC, based on am335x-kernel"
 LICENSE = "GPLv2"
 KERNEL_IMAGETYPE = "uImage"
 
-require multi-kernel.inc
-require tipspkernel.inc
+require sources/meta-ti/recipes-kernel/linux/multi-kernel.inc
+require sources/meta-ti/recipes-kernel/linux/tipspkernel.inc
 
 S = "${WORKDIR}/git"
 

@@ -12,8 +12,8 @@ CONMANPKGS ?= "connman connman-plugin-loopback connman-plugin-ethernet connman-p
 CONMANPKGS_libc-uclibc = ""
 
 IMAGE_INSTALL += " \
-	angstrom-task-boot \
-	chilisom-evb-task-basic \
+	angstrom-packagegroup-boot \
+	chilisom-evb-packagegroup-basic \
 	${CONMANPKGS} \
 	${ROOTFS_PKGMANAGE_PKGS} \
         vsftpd \
@@ -23,7 +23,7 @@ IMAGE_INSTALL += " \
 	libstdc++ \
 	ntpdate \
 	nano \
-	task-sdk-target \
+	packagegroup-sdk-target \
 	tslib-conf \
 	tslib-tests \
 	tslib-calibrate \
@@ -37,7 +37,7 @@ IMAGE_LINGUAS = "en-us pl-pl de-de"
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
 IMAGE_INITSCRIPTS   = " "
-IMAGE_LOGIN_MANAGER = "tinylogin shadow"
+IMAGE_LOGIN_MANAGER = "shadow"
 
 export IMAGE_BASENAME = "hmi-image"
 
